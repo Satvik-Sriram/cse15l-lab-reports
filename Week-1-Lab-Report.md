@@ -6,14 +6,14 @@ Here are the steps:
       c. Switch the account from your username to your CSE 15L account (should be formatted similarly to cs15lwi23xx)\
       d. Set your password (you should use your UCSD password for your current password)
   2. Download VSCode\
-      a. Go to https://code.visualstudio.com/ \
+      a. Go to https://code.visualstudio.com/ 
       b. Download the version for your operating system\
       c. Apply all default settings during the installation process
-  3. Download Git Bash for Windows at https://gitforwindows.org/ into VSCode, follow all default settings\
+  3. Download Git Bash for Windows at https://gitforwindows.org/ into VSCode, follow all default settings.
   4. Open VSCode and open a new terminal\
       a. Make sure it is the Bash terminal that you just downloaded, to check, look at the top right of the terminal and check the name.\
       b. If it does not say bash, then click the downward arrow beside the plus and select bash.
-  5. In the terminal, type the commond "ssh (your cs15lwi23xx username)@ieng6.ucsd.edu \
-  6. You should be prompted with the following if you have never logged into the remote server. If so, type "yes".\
-  7. Type your password that you set for this account from step 1 when prompted. (you password will not show for security reasons)\
-  8. Once you are logged into the server, type some commands in to test it out. \
+  5. In the terminal, type the commond "ssh (your cs15lwi23xx username)@ieng6.ucsd.edu.
+  6. You should be prompted with the following if you have never logged into the remote server. If so, type "yes".
+  7. Type your password that you set for this account from step 1 when prompted. (you password will not show for security reasons).
+  8. Once you are logged into the server, type some commands in to test it out. 
