@@ -4,4 +4,9 @@ Here are the steps:
       a. Go to https://sdacs.ucsd.edu/~icc/index.php \
       b. Login with your UCSD username and PID\
       c. Switch the account from your username to your CSE 15L account (should be formatted similarly to cs15lwi23xx)\
-      d. 
+      d. Set your password (you should use your UCSD password for your current password)\
+  2. Download VSCode
+      a. Go to https://code.visualstudio.com/ \
+      b. Download the version for your operating system\
+      c. Apply all default settings during the installation process\
+  3. 
