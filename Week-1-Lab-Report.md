@@ -17,4 +17,8 @@ Here are the steps:
   5. In the terminal, type the commond "ssh (your cs15lwi23xx username)@ieng6.ucsd.edu.
   6. You should be prompted with the following if you have never logged into the remote server. If so, type "yes".
   7. Type your password that you set for this account from step 1 when prompted. (you password will not show for security reasons).
-  8. Once you are logged into the server, type some commands in to test it out. 
+      ![](Lab_1_pic_2.png)
+      - Once you enter, the terminal should look like the image below\
+      ![](Lab_1_pic_2.png)
+  8. Once you are logged into the server, type some commands in to test it out.
+      ![](Lab_1_pic_3.png) 
