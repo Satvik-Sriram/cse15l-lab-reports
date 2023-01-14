@@ -1,15 +1,16 @@
 Hello incoming CSE 15L students and welcome to the all-in-one tutorial on how to set up access to a remote server using VSCode. 
 Here are the steps:
   1. Set up your CSE 15L accout.\
-      a. Go to https://sdacs.ucsd.edu/~icc/index.php \
+      a. Go to [Link](https://sdacs.ucsd.edu/~icc/index.php) \
       b. Login with your UCSD username and PID\
       c. Switch the account from your username to your CSE 15L account (should be formatted similarly to cs15lwi23xx)\
       d. Set your password (you should use your UCSD password for your current password)
   2. Download VSCode\
-      a. Go to https://code.visualstudio.com/ 
+      a. Go to [Link](https://code.visualstudio.com/) 
+      ![Image](Lab_1_pic_1.png)
       b. Download the version for your operating system\
       c. Apply all default settings during the installation process
-  3. Download Git Bash for Windows at https://gitforwindows.org/ into VSCode, follow all default settings.
+  3. Download Git Bash for Windows at [Link](https://gitforwindows.org/) into VSCode, follow all default settings.
   4. Open VSCode and open a new terminal\
       a. Make sure it is the Bash terminal that you just downloaded, to check, look at the top right of the terminal and check the name.\
       b. If it does not say bash, then click the downward arrow beside the plus and select bash.
