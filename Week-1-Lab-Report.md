@@ -1,3 +1,5 @@
+# **Lab 1**
+
 Hello incoming CSE 15L students and welcome to the all-in-one tutorial on how to set up access to a remote server using VSCode. 
 Here are the steps:
   1. Set up your CSE 15L accout.\
