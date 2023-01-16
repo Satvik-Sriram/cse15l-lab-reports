@@ -18,7 +18,7 @@ Here are the steps:
   4. Open VSCode and open a new terminal\
       a. Make sure it is the Bash terminal that you just downloaded\
       b. To check, look at the top right of the terminal and check the name.\
-      ![](Lab_1_pic_5.png)
+      ![](Lab_1_pic_5.png) \
       c. If it does not say bash, then click the downward arrow beside the plus and select bash.
   5. In the terminal, type the commond "ssh (your cs15lwi23xx username)@ieng6.ucsd.edu".
       - You should be prompted a message if you have never logged into the remote server. 
