@@ -3,7 +3,7 @@
 Hello incoming CSE 15L students and welcome to the all-in-one tutorial on how to set up access to a remote server using VSCode. 
 Here are the steps:
 
-  ## Installing VSCode
+## Installing VSCode
    - Go to [VSCode](https://code.visualstudio.com/download) \
    ![](Lab_1_pic_1.png)
    - Download the version for your operating system
@@ -12,7 +12,7 @@ Here are the steps:
       - Follow all default settings during the installation process
       - If you prefer, you can set bash as your default terminal when prompted
 
-  ## Remotely Connecting
+## Remotely Connecting
    - Set up your CSE 15L account.
       - Go to [https://sdacs.ucsd.edu/~icc/index.php](https://sdacs.ucsd.edu/~icc/index.php) 
       - login with your UCSD username and PID
@@ -32,7 +32,7 @@ Here are the steps:
       - Once you enter, the terminal should look like the image below\
       ![](Lab_1_pic_2.png)
       
-  ## Trying Some Commands
+## Trying Some Commands
    - Once you are logged into the server, type some commands in to test it out.
       ![](Lab_1_pic_3.png) 
       - These commands will be able to take you through the file system within the remote server
