@@ -14,7 +14,7 @@ This screenshot shows a second message being added to the server. URI url is onc
 
 
 ## Part 2
-I have chosen to look at ArrayExamples.java. \
+I have chosen to look at ArrayExamples.java. 
   - **Failure inducing input**
 ```
     @Test
@@ -38,13 +38,25 @@ I have chosen to look at ArrayExamples.java. \
     - The first tests produces an error and show that the element at index 3 was expected to be 5 but was 99. The second test does not produce any message and passes         the test \
   - **The bug** 
     - Before
-```
-    static void reverseInPlace(int[] arr) {
-      for(int i = 0; i < arr.length; i += 1) {
-        arr[i] = arr[arr.length - i - 1];
-      }
-    }
-```
+        ```
+          static void reverseInPlace(int[] arr) {
+            for(int i = 0; i < arr.length; i += 1) {
+              arr[i] = arr[arr.length - i - 1];
+            }
+          }
+        ```
     - After
+        ```
+         static void reverseInPlace(int[] arr) {
+           int change = 0;
+           for(int i = 0; i < arr.length/2; i += 1) {
+             change = arr[arr.length - i - 1];
+             arr[arr.length - i - 1] = arr[i];
+             arr[i] = change;
+           }
+         }
+        ```
+     - A temporary variable was created to store the most right value that will be changed. This allows that value to be changed with the most left value. Later the          left value is replaced with the value contained within the variable "change". The for loop is also cut in half to compensate for two values being changed each          iteration.
+
 
 ## Part 3
