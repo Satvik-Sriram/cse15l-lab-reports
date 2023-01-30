@@ -14,13 +14,37 @@ This screenshot shows a second message being added to the server. URI url is onc
 
 
 ## Part 2
-I have chosen to look at ArrayExamples.java
-  - Failure-inducing input
+I have chosen to look at ArrayExamples.java. \
+  - **Failure inducing input**
+```
     @Test
     public void testReverseInPlace1() {
       int[] input = { 4, 5, 6, 99, 10 };
       ArrayExamples.reverseInPlace(input);
       assertArrayEquals(new int[]{ 10,99,6,5,4 }, input);
     }
-      
+```
+  - **Non-Failure inducing input**
+```
+    @Test
+    public void testReverseInPlace2() {
+      int[] input = { 3 };
+      ArrayExamples.reverseInPlace(input);
+      assertArrayEquals(new int[]{ 3 }, input);
+    }
+```
+  - **Symptoms for both tests** \
+![](Lab_2_pic_4.png) 
+    - The first tests produces an error and show that the element at index 3 was expected to be 5 but was 99. The second test does not produce any message and passes         the test \
+  - **The bug** 
+    - Before
+```
+    static void reverseInPlace(int[] arr) {
+      for(int i = 0; i < arr.length; i += 1) {
+        arr[i] = arr[arr.length - i - 1];
+      }
+    }
+```
+    - After
+
 ## Part 3
