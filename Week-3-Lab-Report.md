@@ -2,7 +2,7 @@
 
 ## Part 1
 **Code for StringServer.java** \
-![](Lab_2_pic_1.png)
+<img src="Lab_2_pic_1.png" alt="drawing" width="550"/>
 
 **Screenshot #1** \
 ![](Lab_2_pic_2.png) 
