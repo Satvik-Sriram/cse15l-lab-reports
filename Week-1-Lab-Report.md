@@ -35,7 +35,11 @@ Here are the steps:
 ## Trying Some Commands
    - Once you are logged into the server, type some commands in to test it out.
       ![](Lab_1_pic_3.png) 
-      - These commands will be able to take you through the file system within the remote server
-      - Explore these commonds to see what you are able to access
+      - The -**ls** command will list out all of the files in your current directory
+      - The -**cd** command with no arguments will take you back to the home directory
+      - The -**cd** command with an argument (local in the picture above) will take you that directory if it exists in the current directory
+         - Note that if the argument you enter does not exist in the current directory, then the error seen in the image above will be printed.
+      - Another command you can try is -**ls** with "lat" is used to sort the files in the current directory by the time modified from most recent to oldest.
+      - Explore these commands to see what you are able to access
 
 Congradulations! You have now connected your devcie to a remote server.
