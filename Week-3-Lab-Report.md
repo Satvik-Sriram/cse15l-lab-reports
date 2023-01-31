@@ -35,7 +35,7 @@ I have chosen to look at ArrayExamples.java.
 ```
   - **Symptoms for both tests** \
 ![](Lab_2_pic_4.png) 
-    - The first tests produces an error and show that the element at index 3 was expected to be 5 but was 99. The second test does not produce any message and passes         the test 
+    - The first tests produces an error and show that the element at index 3 was expected to be 5 but was 99. The second test does not produce any message and passes         the test. 
   - **The bug** 
     - Before
         ```
