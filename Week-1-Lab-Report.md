@@ -40,6 +40,6 @@ Here are the steps:
       - The -**cd** command with an argument (local in the picture above) will take you that directory if it exists in the current directory
          - Note that if the argument you enter does not exist in the current directory, then the error seen in the image above will be printed.
       - Another command you can try is -**ls** with "lat" is used to sort the files in the current directory by the time modified from most recent to oldest.
-      - Explore these commands to see what you are able to access
+   - Explore these commands to see what you are able to access
 
 Congradulations! You have now connected your devcie to a remote server.
