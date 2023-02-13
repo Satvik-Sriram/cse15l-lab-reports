@@ -134,3 +134,6 @@ The -mindepth and -maxdepth options have similar functions in that it restricts 
       ./-k
       
 The -mmin option finds all files/directories that have been modified within the given time frame. Inputting a number after -mmin restricts the search to files that have been modified that number of minutes ago. Adding the +/- modifier give the command a range of times to look through, + being the given time and longer and - being the given time and less. In these examples, I have modifed specific files in the last 10 minutes and they are outputted in the first command while the rest I left untouched. This is useful if you are working on a shared directory and you want to know which files have been modified recently or which ones have not been modified recently.
+
+
+All information was found at: https://man7.org/linux/man-pages/man1/find.1.html
