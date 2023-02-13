@@ -87,3 +87,50 @@ The command that I will be focusing on today is the **find** command.
 The -type option allows the user to find a specific type of file with the given or current directory. It has many file type options, but the two that are used in the examples are "f" for file and "d" for directory. Using the -type options really helps with specifiying which files you are searching for if you don't know the name or location of the file. 
 
 ## Option 3: -min/maxdepth
+
+### Example 1
+      [cs15lwi23aul@ieng6-202]:written_2:288$ find -maxdepth 2 -empty
+      ./non-fiction/emptyfile2.txt
+      ./travel_guides/emptyDirectory
+      ./lab5/emptyfile.txt
+      
+### Example 2
+      [cs15lwi23aul@ieng6-202]:written_2:289$ find -mindepth 2 -type d
+      ./non-fiction/OUP
+      ./non-fiction/OUP/Abernathy
+      ./non-fiction/OUP/Berk
+      ./non-fiction/OUP/Castro
+      ./non-fiction/OUP/Fletcher
+      ./non-fiction/OUP/Kauffman
+      ./non-fiction/OUP/Rybczynski
+      ./travel_guides/berlitz1
+      ./travel_guides/berlitz2
+      ./travel_guides/emptyDirectory
+
+The -mindepth and -maxdepth options have similar functions in that it restricts the recursive search capabilites to a certain bound by either setting a minimum or a maximum. In the examples, I have used commands that I have used in other examples with the added restirctions. The output is a list of files that fit the given criteria. This is useful if you are trying to find if files exist only a few branches down or if you want to ignore any shallow files. 
+
+## Option 4: -mmin
+
+### Example 1
+      [cs15lwi23aul@ieng6-202]:written_2:361$ find -mmin -10
+      ./non-fiction/OUP/Castro/chM.txt
+      ./non-fiction/OUP/Kauffman
+      ./non-fiction/OUP/Kauffman/ch1.txt
+      ./non-fiction/OUP/Kauffman/chQ.txt
+      ./non-fiction/emptyfile2.txt
+      ./travel_guides/berlitz2/Bahamas-WhatToDo.txt
+      ./travel_guides/berlitz2/Poland-History.txt
+      ./lab5
+      ./lab5/emptyfile.txt
+      
+### Example 2
+      [cs15lwi23aul@ieng6-202]:written_2:363$ find -maxdepth 2 -mmin +120
+      .
+      ./non-fiction
+      ./non-fiction/OUP
+      ./travel_guides
+      ./travel_guides/berlitz2
+      ./travel_guides/emptyDirectory
+      ./-k
+      
+The -mmin option finds all files/directories that have been modified within the given time frame. Inputting a number after -mmin restricts the search to files that have been modified that number of minutes ago. Adding the +/- modifier give the command a range of times to look through, + being the given time and longer and - being the given time and less. In these examples, I have modifed specific files in the last 10 minutes and they are outputted in the first command while the rest I left untouched. This is useful if you are working on a shared directory and you want to know which files have been modified recently or which ones have not been modified recently.
