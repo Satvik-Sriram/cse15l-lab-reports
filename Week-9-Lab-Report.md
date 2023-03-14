@@ -152,31 +152,38 @@ The -c option counts the number of lines that contains the given word. In the ex
 
 
 
-## Option 4: -mmin
+## Option 4: -n
 
 ### Example 1
-      [cs15lwi23aul@ieng6-202]:written_2:361$ find -mmin -10
-      ./non-fiction/OUP/Castro/chM.txt
-      ./non-fiction/OUP/Kauffman
-      ./non-fiction/OUP/Kauffman/ch1.txt
-      ./non-fiction/OUP/Kauffman/chQ.txt
-      ./non-fiction/emptyfile2.txt
-      ./travel_guides/berlitz2/Bahamas-WhatToDo.txt
-      ./travel_guides/berlitz2/Poland-History.txt
-      ./lab5
-      ./lab5/emptyfile.txt
+      grep -n "Protestantism" IntroIndia.txt
+            372:        on Protestantism, all with a certain Hindu tinge to them.
       
 ### Example 2
-      [cs15lwi23aul@ieng6-202]:written_2:363$ find -maxdepth 2 -mmin +120
-      .
-      ./non-fiction
-      ./non-fiction/OUP
-      ./travel_guides
-      ./travel_guides/berlitz2
-      ./travel_guides/emptyDirectory
-      ./-k
+      grep -n "city" WhereToMallorca.txt        
+            25:        miles) or so of the city, ensconced in seaside hotels and villas). Any
+            37:        Palma is a large, cosmopolitan, working city, with a
+            39:        Mallorca. Yet the city feels undeniably tropical and sensual. This has
+            46:        the island’s road system radiates from the city — but it is a world far
+            54:        hill and dominates the center of the city, with the ancient Almudaina
+            63:        transforming the site into a real city. Few Arab buildings remain,
+            67:        centuries. The old city’s narrow, atmospheric streets are full of
+            132:        the city walls were razed in 1902. The Banys Àrabs (Arab Baths), behind
+            166:        city merchants’ stock exchange (now used to house art exhibitions — the
+            173:        old city are usually quiet, dark, and practically deserted, though the
+            177:        clubs clustering under the old windmills which used to grind the city’s
+            187:        castle has commanded the sea and land approaches to the city since its
+            189:        view from the circular battlements of the city and Bay of Palma is
+            718:        The only way to enjoy Maó is by foot. The city is clustered
+            746:        narrow streets, is the Porto Sant Roc, one of the original city
+            778:        monuments is found near the city limit, at Trepucó off the road south
+            853:        one of its kind on Menorca. For greater authenticity, head back to the
+            938:        Perhaps the most enchanting city of the Balearics,
+            941:        the early 18th century, Ciutadella (“little city”) was the capital of
+            946:        spot where the road from Maó reached the old city gates. The gates are
+            951:        bisects the old part of the city. It takes various names, beginning as
+            983:        About 5 km (3 miles) west of the city, just off the south
       
-The -mmin option finds all files/directories that have been modified within the given time frame. Inputting a number after -mmin restricts the search to files that have been modified that number of minutes ago. Adding the +/- modifier give the command a range of times to look through, + being the given time and longer and - being the given time and less. In these examples, I have modifed specific files in the last 10 minutes and they are outputted in the first command while the rest I left untouched. This is useful if you are working on a shared directory and you want to know which files have been modified recently or which ones have not been modified recently.
+The -n option returns the lines with the line numbers that contain the given string. The examples show how the input was found in the following files whle also given the line number that they were found at. This option is especially useful when the user is trying to find where the given word or phrase is located in a file. 
 
 
-All information was found at: https://man7.org/linux/man-pages/man1/find.1.html
+All information was found using the --help command. 
