@@ -108,7 +108,6 @@ The command that I will be focusing on today is the **grep** command.
         Political power thus returned to Edinburgh after nearly 300
         Scottish people.
 ### Example 2
-
       grep -v "it" chZ.txt
 
         See also Cholos; Pachucos
